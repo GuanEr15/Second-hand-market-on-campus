@@ -1,5 +1,7 @@
 package com.guaner.controller.admin;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,11 +29,11 @@ import com.guaner.util.ValidateEntityUtil;
 @Controller
 public class UserController {
 
-	@Autowired
+	@Resource
 	private UserService userService;
-	@Autowired
+	@Resource
 	private RoleService roleService;
-	@Autowired
+	@Resource
 	private OperaterLogService operaterLogService;
 	/**
 	 * 用户列表页面

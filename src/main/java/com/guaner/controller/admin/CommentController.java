@@ -2,6 +2,8 @@ package com.guaner.controller.admin;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,11 +30,11 @@ import com.guaner.service.common.StudentService;
 @Controller
 public class CommentController {
 
-	@Autowired
+	@Resource
 	private GoodsService goodsService;
-	@Autowired
+	@Resource
 	private com.guaner.service.common.StudentService studentService;
-	@Autowired
+	@Resource
 	private CommentService commentService;
 	
 	/**
