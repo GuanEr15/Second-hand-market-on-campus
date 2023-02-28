@@ -26,9 +26,9 @@ import com.guaner.util.ValidateEntityUtil;
 @Controller
 public class FriendLinkController {
 
-	@Autowired
+	@Resource
 	private FriendLinkService friendLinkService;
-	@Autowired
+	@Resource
 	private OperaterLogService operaterLogService;
 	/**
 	 * 友情链接列表页面

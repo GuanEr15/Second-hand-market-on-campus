@@ -24,7 +24,7 @@ import com.guaner.util.ValidateEntityUtil;
 @Controller
 public class GoodsCategoryController {
 
-	@Autowired
+	@Resource
 	private GoodsCategoryService goodsCategoryService;
 	
 	/**

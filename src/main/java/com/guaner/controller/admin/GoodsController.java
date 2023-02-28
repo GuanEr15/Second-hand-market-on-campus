@@ -29,11 +29,11 @@ import com.guaner.service.common.StudentService;
 @Controller
 public class GoodsController {
 
-	@Autowired
+	@Resource
 	private GoodsCategoryService goodsCategoryService;
-	@Autowired
+	@Resource
 	private GoodsService goodsService;
-	@Autowired
+	@Resource
 	private StudentService studentService;
 	
 	/**

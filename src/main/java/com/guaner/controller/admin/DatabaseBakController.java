@@ -29,10 +29,10 @@ import com.guaner.service.admin.OperaterLogService;
 @Controller
 public class DatabaseBakController {
 
-	@Autowired
+	@Resource
 	private OperaterLogService operaterLogService;
 	
-	@Autowired
+	@Resource
 	private DatabaseBakService databaseBakService;
 	
 	@Value("${guaner.database.backup.dir}")
