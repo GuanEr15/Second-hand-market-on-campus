@@ -26,9 +26,9 @@ import com.guaner.util.ValidateEntityUtil;
 @Controller
 public class NewsController {
 
-	@Autowired
+	@Resource
 	private NewsService newsService;
-	@Autowired
+	@Resource
 	private OperaterLogService operaterLogService;
 	/**
 	 * 新闻公告列表页面

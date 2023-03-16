@@ -27,10 +27,10 @@ import com.guaner.util.ValidateEntityUtil;
 @Controller
 public class MenuController {
 
-	@Autowired
+	@Resource
 	private MenuService menuService;
 	
-	@Autowired
+	@Resource
 	private OperaterLogService operaterLogService;
 	
 	/**

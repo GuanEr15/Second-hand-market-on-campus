@@ -36,13 +36,13 @@ public class RoleController {
 	
 	private Logger log = LoggerFactory.getLogger(RoleController.class);
 	
-	@Autowired
+	@Resource
 	private MenuService menuService;
 	
-	@Autowired
+	@Resource
 	private OperaterLogService operaterLogService;
 	
-	@Autowired
+	@Resource
 	private RoleService roleService;
 	
 	/**
