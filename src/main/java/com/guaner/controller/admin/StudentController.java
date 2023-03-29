@@ -23,7 +23,7 @@ import com.guaner.service.common.StudentService;
 @Controller
 public class StudentController {
 
-	@Autowired
+	@Resource
 	private StudentService studentService;
 	
 	/**

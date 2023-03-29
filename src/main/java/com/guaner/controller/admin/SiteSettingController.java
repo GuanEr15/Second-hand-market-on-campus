@@ -23,9 +23,9 @@ import com.guaner.util.ValidateEntityUtil;
 @Controller
 public class SiteSettingController {
 
-	@Autowired
+	@Resource
 	private SiteSettingService siteSettingService;
-	@Autowired
+	@Resource
 	private OperaterLogService operaterLogService;
 	
 	

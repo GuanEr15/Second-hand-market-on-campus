@@ -46,25 +46,25 @@ public class SystemController {
 
 	
 	
-	@Autowired
+	@Resource
 	private OperaterLogService operaterLogService;
 	
-	@Autowired
+	@Resource
 	private UserService userService;
 	
-	@Autowired
+	@Resource
 	private DatabaseBakService databaseBakService;
 	
-	@Autowired
+	@Resource
 	private StudentService studentService;
 	
-	@Autowired
+	@Resource
 	private GoodsService goodsService;
 	
-	@Autowired
+	@Resource
 	private WantedGoodsService wantedGoodsService;
 	
-	@Autowired
+	@Resource
 	private CommentService commentService;
 	
 	
