@@ -38,17 +38,17 @@ import com.guaner.util.ValidateEntityUtil;
 @Controller
 public class HomeStudentController {
 
-	@Autowired
+	@Resource
 	private GoodsCategoryService goodsCategoryService;
-	@Autowired
+	@Resource
 	private StudentService studentService;
-	@Autowired
+	@Resource
 	private GoodsService goodsService;
-	@Autowired
+	@Resource
 	private WantedGoodsService wantedGoodsService;
-	@Autowired
+	@Resource
 	private ReportGoodsService reportGoodsService;
-	@Autowired
+	@Resource
 	private CommentService commentService;
 	/**
 	 * 学生登录主页

@@ -24,9 +24,9 @@ import com.guaner.service.common.WantedGoodsService;
 @Controller
 public class WantedGoodsController {
 
-	@Autowired
+	@Resource
 	private WantedGoodsService wantedGoodsService;
-	@Autowired
+	@Resource
 	private StudentService studentService;
 	
 	/**

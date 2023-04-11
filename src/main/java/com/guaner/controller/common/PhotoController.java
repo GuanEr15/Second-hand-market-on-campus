@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class PhotoController {
 	
-	@Autowired
+	@Resource
 	private ResourceLoader resourceLoader;
 	
 	@Value("${guaner.upload.photo.path}")

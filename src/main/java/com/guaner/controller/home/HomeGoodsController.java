@@ -28,11 +28,11 @@ import com.guaner.service.common.GoodsService;
 @Controller
 public class HomeGoodsController {
 
-	@Autowired
+	@Resource
 	private GoodsCategoryService goodsCategoryService;
-	@Autowired
+	@Resource
 	private GoodsService goodsService;
-	@Autowired
+	@Resource
 	private CommentService commentService;
 	/**
 	 * 物品详情页面
