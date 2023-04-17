@@ -19,7 +19,7 @@ import com.guaner.service.common.WantedGoodsService;
 @Controller
 public class HomeWantedGoodsController {
 
-	@Autowired
+	@Resource
 	private WantedGoodsService wantedGoodsService;
 	
 	/**

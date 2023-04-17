@@ -30,13 +30,13 @@ import com.guaner.util.ValidateEntityUtil;
 @RequestMapping("/home/index")
 @Controller
 public class IndexController {
-	@Autowired
+	@Resource
 	private GoodsService goodsService;
-	@Autowired
+	@Resource
 	private GoodsCategoryService goodsCategoryService;
-	@Autowired
+	@Resource
 	private StudentService studentService;
-	@Autowired
+	@Resource
 	private NewsService newsService;
 	/**
 	 * 前台首页

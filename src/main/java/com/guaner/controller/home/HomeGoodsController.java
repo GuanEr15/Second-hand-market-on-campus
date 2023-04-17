@@ -36,8 +36,8 @@ public class HomeGoodsController {
 	private CommentService commentService;
 	/**
 	 * 物品详情页面
-	 * @param id
-	 * @param model
+	 * @param id id 
+	 * @param model model
 	 * @return
 	 */
 	@RequestMapping(value="/detail")
