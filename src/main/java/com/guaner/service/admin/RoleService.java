@@ -20,7 +20,7 @@ import com.guaner.entity.admin.Role;
 @Service
 public class RoleService {
 	
-	@Autowired
+	@Resource
 	private RoleDao roleDao;
 	
 	/**

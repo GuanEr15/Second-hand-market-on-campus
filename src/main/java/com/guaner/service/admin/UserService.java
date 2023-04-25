@@ -21,7 +21,7 @@ import com.guaner.entity.admin.User;
 @Service
 public class UserService {
 
-	@Autowired
+	@Resource
 	private UserDao userDao;
 	
 	/**

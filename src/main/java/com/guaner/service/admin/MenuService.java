@@ -13,7 +13,7 @@ import com.guaner.entity.admin.Menu;
 @Service
 public class MenuService {
 	
-	@Autowired
+	@Resource
 	private MenuDao menuDao;
 	
 	/**

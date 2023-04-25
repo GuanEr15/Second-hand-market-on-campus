@@ -25,7 +25,7 @@ import com.guaner.util.SessionUtil;
 @Service
 public class OperaterLogService {
 	
-	@Autowired
+	@Resource
 	private OperaterLogDao operaterLogDao;
 	
 	/**

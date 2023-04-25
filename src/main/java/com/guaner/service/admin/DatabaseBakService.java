@@ -3,6 +3,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
+import javax.annotation.Resource;
+
 import com.guaner.dao.admin.DatabaseBakDao;
 import com.guaner.util.StringUtil;
 import org.slf4j.Logger;
@@ -25,9 +27,9 @@ import com.guaner.util.StringUtil;
 @Service
 public class DatabaseBakService {
 
-	@Autowired
+	@Resource
 	private com.guaner.service.admin.OperaterLogService operaterLogService;
-	@Autowired
+	@Resource
 	private DatabaseBakDao databaseBakDao;
 	@Value("${guaner.database.backup.dir}")
 	private String backUpDir;
