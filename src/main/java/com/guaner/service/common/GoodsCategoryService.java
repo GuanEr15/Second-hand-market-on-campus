@@ -9,19 +9,19 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
-/**
- * 物品管理service
- */
 import org.springframework.stereotype.Service;
 
 import com.guaner.bean.PageBean;
 import com.guaner.dao.common.GoodsCategoryDao;
 import com.guaner.entity.common.GoodsCategory;
 
+/**
+ * 物品管理service
+ */
 @Service
 public class GoodsCategoryService {
 
-	@Autowired
+	@Resource
 	private GoodsCategoryDao goodsCategoryDao;
 	
 	/**

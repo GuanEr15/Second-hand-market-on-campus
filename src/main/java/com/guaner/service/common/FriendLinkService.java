@@ -24,7 +24,7 @@ import com.guaner.entity.common.FriendLink;
 @Service
 public class FriendLinkService {
 
-	@Autowired
+	@Resource
 	private FriendLinkDao friendLinkDao;
 	
 	/**

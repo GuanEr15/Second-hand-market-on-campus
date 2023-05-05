@@ -27,7 +27,7 @@ import com.guaner.entity.common.Student;
 @Service
 public class CommentService {
 
-	@Autowired
+	@Resource
 	private CommentDao commentDao;
 	
 	/**

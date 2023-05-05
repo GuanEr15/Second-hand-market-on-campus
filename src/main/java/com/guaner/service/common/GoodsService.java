@@ -1,6 +1,7 @@
 package com.guaner.service.common;
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -12,9 +13,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.jpa.domain.Specification;
-/**
- * 物品管理service
- */
 import org.springframework.stereotype.Service;
 
 import com.guaner.bean.PageBean;
@@ -22,10 +20,13 @@ import com.guaner.dao.common.GoodsDao;
 import com.guaner.entity.common.Goods;
 import com.guaner.entity.common.Student;
 
+/**
+ * 物品管理service
+ */
 @Service
 public class GoodsService {
 
-	@Autowired
+	@Resource
 	private GoodsDao goodsDao;
 	
 	/**
