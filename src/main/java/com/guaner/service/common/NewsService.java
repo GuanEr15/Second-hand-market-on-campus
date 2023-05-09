@@ -24,7 +24,7 @@ import com.guaner.entity.common.News;
 @Service
 public class NewsService {
 
-	@Autowired
+	@Resource
 	private NewsDao newsDao;
 	
 	/**

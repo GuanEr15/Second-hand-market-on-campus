@@ -27,7 +27,7 @@ import com.guaner.entity.common.Student;
 @Service
 public class ReportGoodsService {
 
-	@Autowired
+	@Resource
 	private ReportGoodsDao reportGoodsDao;
 	
 	/**

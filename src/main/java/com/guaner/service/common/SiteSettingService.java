@@ -14,7 +14,7 @@ import com.guaner.entity.common.SiteSetting;
 @Service
 public class SiteSettingService {
 
-	@Autowired
+	@Resource
 	private SiteSettingDao siteSettingDao;
 	
 	/**
