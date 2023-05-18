@@ -31,7 +31,8 @@ import com.guaner.util.StringUtil;
 public class AdminLoginInterceptor implements HandlerInterceptor{
 
 	private Logger log = LoggerFactory.getLogger(AdminLoginInterceptor.class);
-	@Autowired
+	
+	@Resource
 	private SiteConfig siteConfig;
 	
 	@Override

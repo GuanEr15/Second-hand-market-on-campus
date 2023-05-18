@@ -28,7 +28,7 @@ import com.guaner.entity.common.WantedGoods;
 @Service
 public class WantedGoodsService {
 
-	@Autowired
+	@Resource
 	private WantedGoodsDao wantedGoodsDao;
 	
 	/**
@@ -89,9 +89,7 @@ public class WantedGoodsService {
 	public PageBean<WantedGoods> findWantedGoodslist(PageBean<WantedGoods> pageBean,WantedGoods wantedGoods){
 		
 		Specification<WantedGoods> specification = new Specification<WantedGoods>() {
-			/**
-			 * 
-			 */
+			
 			private static final long serialVersionUID = 1L;
 
 			@Override
