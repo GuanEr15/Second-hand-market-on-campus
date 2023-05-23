@@ -22,16 +22,20 @@ import com.guaner.util.StringUtil;
 @Component
 public class HomeGlobalInterceptor implements HandlerInterceptor{
 
-	@Autowired
+	@Resource
 	private GoodsCategoryService goodsCategoryService;
-	@Autowired
+
+	@Resource
 	private SiteConfig siteConfig;
-	@Autowired
+
+	@Resource
 	private FriendLinkService friendLinkService;
-	@Autowired
+
+	@Resource
 	private SiteSettingService siteSettingService;
+
 	@Override
-	public boolean  preHandle(HttpServletRequest request, HttpServletResponse response, Object handler){
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler){
 		
 		if(!StringUtil.isAjax(request)){
 			//若不是ajax请求，则将菜单信息放入页面模板变量
