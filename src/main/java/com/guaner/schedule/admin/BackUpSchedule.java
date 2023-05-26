@@ -18,7 +18,7 @@ import com.guaner.service.admin.DatabaseBakService;
 @EnableScheduling
 public class BackUpSchedule {
 
-	@Autowired
+	@Resource
 	private DatabaseBakService databaseBakService;
 	
 	private Logger log = LoggerFactory.getLogger(BackUpSchedule.class);

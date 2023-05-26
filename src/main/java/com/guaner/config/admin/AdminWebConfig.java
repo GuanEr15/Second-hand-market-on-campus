@@ -13,10 +13,10 @@ import com.guaner.interceptor.admin.AdminLoginInterceptor;
 @Configuration
 public class AdminWebConfig implements WebMvcConfigurer {
 	
-	@Autowired
+	@Resource
 	private AdminLoginInterceptor loginInterceptor;
 	
-	@Autowired
+	@Resource
 	private AuthorityInterceptor authorityInterceptor;
 	
 	@Override
