@@ -17,8 +17,8 @@ public interface DatabaseBakDao extends JpaRepository<DatabaseBak, Long>{
 
 	/**
 	 * 根据id来查询
-	 * @param id
-	 * @return
+	 * @param id id
+	 * @return 数据
 	 */
 	@Query("select db from DatabaseBak db where id = :id")
 	DatabaseBak find(@Param("id") Long id);

@@ -16,16 +16,16 @@ public interface OperaterLogDao extends JpaRepository<OperaterLog, Long> {
 	
 	/**
 	 * 根据id查找操作日志
-	 * @param id
-	 * @return
+	 * @param id 操作id
+	 * @return 操作日志
 	 */
 	@Query("select ol from OperaterLog ol where id = :id")
 	OperaterLog find(@Param("id") Long id);
 	
 	/**
 	 * 获取最近的指定条数的操作日志
-	 * @param size
-	 * @return
+	 * @param size 页号
+	 * @return 操作日志
 	 */
 	@Query(value="select * from guaner_operater_log order by create_time desc limit 0,:size",nativeQuery=true)
 	List<OperaterLog> findLastestLog(@Param("size") int size);
