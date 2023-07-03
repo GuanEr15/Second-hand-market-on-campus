@@ -14,44 +14,42 @@ import com.guaner.entity.common.BaseEntity;
 
 /**
  * 后台菜单实体类
+ * 
  * @author Administrator
  *
  */
 @Entity
-@Table(name="guaner_menu")
+@Table(name = "guaner_menu")
 @EntityListeners(AuditingEntityListener.class)
-public class Menu extends BaseEntity{
+public class Menu extends BaseEntity {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	
-	@ValidateEntity(required=true,requiredLeng=true,minLength=1,maxLength=18,errorRequiredMsg="菜单名称不能为空!",errorMinLengthMsg="菜单名称长度需大于1!",errorMaxLengthMsg="菜单名称长度不能大于18!")
-	@Column(name="name",nullable=false,length=18)
-	private String name;//菜单名称
-	
+
+	@ValidateEntity(required = true, requiredLeng = true, minLength = 1, maxLength = 18, errorRequiredMsg = "菜单名称不能为空!", errorMinLengthMsg = "菜单名称长度需大于1!", errorMaxLengthMsg = "菜单名称长度不能大于18!")
+	@Column(name = "name", nullable = false, length = 18)
+	private String name;// 菜单名称
+
 	@ManyToOne
-	@JoinColumn(name="parent_id")
-	private Menu parent;//菜单父分类
-	
-	@ValidateEntity(required=false)
-	@Column(name="url",length=128)
-	private String url;//菜单url
+	@JoinColumn(name = "parent_id")
+	private Menu parent;// 菜单父分类
 
-	@ValidateEntity(required=false)
-	@Column(name="icon",length=32)
-	private String icon;//菜单图标icon
-	
-	@Column(name="sort",nullable=false,length=4)
-	private Integer sort = 0;//菜单顺序，默认升序排列,默认是0
+	@ValidateEntity(required = false)
+	@Column(name = "url", length = 128)
+	private String url;// 菜单url
 
-	@Column(name="is_bitton",nullable=false)
-	private boolean isButton = false;//是否是按钮
-	
-	@Column(name="is_show",nullable=false)
-	private boolean isShow = true;//是否显示
-	
+	@ValidateEntity(required = false)
+	@Column(name = "icon", length = 32)
+	private String icon;// 菜单图标icon
+
+	@Column(name = "sort", nullable = false, length = 4)
+	private Integer sort = 0;// 菜单顺序，默认升序排列,默认是0
+
+	@Column(name = "is_bitton", nullable = false)
+	private boolean isButton = false;// 是否是按钮
+
+	@Column(name = "is_show", nullable = false)
+	private boolean isShow = true;// 是否显示
+
 	public String getName() {
 		return name;
 	}
@@ -92,8 +90,6 @@ public class Menu extends BaseEntity{
 		this.sort = sort;
 	}
 
-	
-	
 	public boolean isButton() {
 		return isButton;
 	}
@@ -117,9 +113,4 @@ public class Menu extends BaseEntity{
 				+ isButton + ", isShow=" + isShow + "]";
 	}
 
-	
-
-	
-	
-	
 }

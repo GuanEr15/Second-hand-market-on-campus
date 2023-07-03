@@ -1,4 +1,5 @@
 package com.guaner.entity.admin;
+
 /**
  * 数据库备份记录实体类
  */
@@ -13,7 +14,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import com.guaner.entity.common.BaseEntity;
 
 @Entity
-@Table(name="guaner_database_bak")
+@Table(name = "guaner_database_bak")
 @EntityListeners(AuditingEntityListener.class)
 public class DatabaseBak extends BaseEntity {
 
@@ -21,12 +22,12 @@ public class DatabaseBak extends BaseEntity {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-	@Column(name="filename",nullable=false,length=32)
-	private String filename;//备份的文件名
-	
-	@Column(name="filepath",nullable=false,length=128)
-	private String filepath;//备份的文件路径
+
+	@Column(name = "filename", nullable = false, length = 32)
+	private String filename;// 备份的文件名
+
+	@Column(name = "filepath", nullable = false, length = 128)
+	private String filepath;// 备份的文件路径
 
 	public String getFilename() {
 		return filename;
@@ -49,13 +50,4 @@ public class DatabaseBak extends BaseEntity {
 		return "DatabaseBak [filename=" + filename + ", filepath=" + filepath
 				+ "]";
 	}
-
-	
-	
-	
-	
-	
-	
-	
-	
 }
