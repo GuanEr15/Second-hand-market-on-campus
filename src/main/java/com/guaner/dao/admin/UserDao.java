@@ -9,25 +9,28 @@ import com.guaner.entity.admin.User;
 
 /**
  * 用户数据库处理层
+ * 
  * @author Administrator
  *
  */
 @Repository
-public interface UserDao extends JpaRepository<User, Long>{
-	
+public interface UserDao extends JpaRepository<User, Long> {
+
 	/**
 	 * 按照用户名查找用户信息
+	 * 
 	 * @param username
-	 * @return
+	 * @return 用户信息
 	 */
 	public User findByUsername(String username);
 
 	/**
 	 * 根据用户id查询
+	 * 
 	 * @param id
-	 * @return
+	 * @return 用户信息
 	 */
 	@Query("select u from User u where id = :id")
 	public User find(@Param("id") Long id);
-	
+
 }
