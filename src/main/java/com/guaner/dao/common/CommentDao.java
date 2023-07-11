@@ -43,7 +43,7 @@ public interface CommentDao extends JpaRepository<Comment, Long>,JpaSpecificatio
 	 * @param userId
 	 * @return
 	 */
-	@Query("select c from Comment c where c.goods.id = :goodsId and c.student.id = :studentId")
+	@Query("select d from Comment d where c.goods.id = :goodsId and c.student.id = :studentId")
 	Comment find(@Param("goodsId") Long goodsId, @Param("studentId") Long studentId);
 	
 	
