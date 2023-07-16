@@ -39,7 +39,8 @@ public class FriendLinkController {
 	 */
 	@RequestMapping(value="/list")
 	public String list(Model model,FriendLink friendLink,PageBean<FriendLink> pageBean){
-		model.addAttribute("title", "友情链接列表");
+		model.addAttribute("title", "友情链接列表");		
+		model.addAttribute("title", "友情链接");
 		model.addAttribute("name", friendLink.getName());
 		model.addAttribute("pageBean", friendLinkService.findList(pageBean,friendLink));
 		return "admin/friend_link/list";

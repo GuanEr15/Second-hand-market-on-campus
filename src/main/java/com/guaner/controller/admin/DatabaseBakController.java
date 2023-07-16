@@ -48,7 +48,8 @@ public class DatabaseBakController {
 	 */
 	@RequestMapping(value="/list")
 	public String list(Model model,PageBean<DatabaseBak> pageBean){
-		model.addAttribute("title", "备份列表");
+		model.addAttribute("title", "备份列表");	
+		model.addAttribute("title", "备份详情");
 		model.addAttribute("pageBean", databaseBakService.findList(pageBean));
 		return "admin/database_bak/list";
 	}
