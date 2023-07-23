@@ -36,6 +36,7 @@ public class SiteSettingController {
 	 */
 	@RequestMapping(value="/setting",method=RequestMethod.GET)
 	public String setting(Model model){
+		// 查询变量
 		model.addAttribute("siteSetting", siteSettingService.find());
 		return "admin/site_setting/setting";
 	}

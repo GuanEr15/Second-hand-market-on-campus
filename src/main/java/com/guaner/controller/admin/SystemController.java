@@ -99,6 +99,8 @@ public class SystemController {
 		if(validate.getCode() != CodeMsg.SUCCESS.getCode()){
 			return Result.error(validate);
 		}
+
+		
 		//表示实体信息合法，开始验证验证码是否为空
 		if(StringUtils.isEmpty(cpacha)){
 			return Result.error(CodeMsg.CPACHA_EMPTY);
