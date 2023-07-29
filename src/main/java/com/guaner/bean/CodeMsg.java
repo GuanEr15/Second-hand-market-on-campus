@@ -12,8 +12,8 @@ public class CodeMsg {
 	
 	/**
 	 * 构造函数私有化即单例模式
-	 * @param code
-	 * @param msg
+	 * @param code 代码
+	 * @param msg 信息
 	 */
 	private CodeMsg(int code,String msg){
 		this.code = code;

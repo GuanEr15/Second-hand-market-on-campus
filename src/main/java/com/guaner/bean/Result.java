@@ -19,7 +19,7 @@ public class Result<T> {
 	
 	/**
 	 * 定义传codemsg的私有化构造函数，不允许外部创建对象
-	 * @param codeMsg
+	 * @param codeMsg 代码
 	 */
 	private Result(CodeMsg codeMsg){
 		if(codeMsg != null){
@@ -30,8 +30,8 @@ public class Result<T> {
 	
 	/**
 	 * 定义传指定数据对象和codemsg的私有化构造函数，不允许任意创建对象
-	 * @param data
-	 * @param codeMsg
+	 * @param data 数据
+	 * @param codeMsg 代码
 	 * @return
 	 */
 	private Result(T data,CodeMsg codeMsg){
@@ -44,8 +44,8 @@ public class Result<T> {
 	
 	/**
 	 * 定义统一的成功返回函数
-	 * @param data
-	 * @return
+	 * @param data 数据
+	 * @return 数据
 	 */
 	public static <T>Result<T> success(T data){
 		return new Result<T>(data,CodeMsg.SUCCESS);
@@ -53,8 +53,8 @@ public class Result<T> {
 
 	/**
 	 * 统一错误返回方法，所有错误都调用此方法
-	 * @param codeMsg
-	 * @return
+	 * @param codeMsg 代码
+	 * @return 数据
 	 */
 	public static <T>Result<T> error(CodeMsg codeMsg){
 		return new Result<T>(codeMsg);
