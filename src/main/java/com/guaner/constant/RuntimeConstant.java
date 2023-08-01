@@ -20,6 +20,7 @@ public class RuntimeConstant {
 			"/error",
 			"/photo/view",
 			"/cpacha/generate_cpacha",
+			"/*",
 		);
 	//后台权限拦截器无需拦截的url
 	public static List<String> authorityExcludePathPatterns = Arrays.asList(

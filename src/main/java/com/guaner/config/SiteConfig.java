@@ -20,10 +20,16 @@ public class SiteConfig {
 	@Value("${guaner.site.url}")
 	private String siteUrl;
 
+	/*
+	 * 获取名称
+	 */
 	public String getSiteName() {
 		return siteName;
 	}
 
+	/*
+	 * 设置名称
+	 */
 	public void setSiteName(String siteName) {
 		this.siteName = siteName;
 	}
