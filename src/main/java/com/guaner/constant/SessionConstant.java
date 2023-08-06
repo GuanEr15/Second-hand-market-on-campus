@@ -1,7 +1,7 @@
 package com.guaner.constant;
 /**
  * 关于session的所有常量统一存放类
- * @author Administrator
+ * @author Administrator 测试
  *
  */
 public class SessionConstant {
